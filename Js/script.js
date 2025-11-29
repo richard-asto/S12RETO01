@@ -31,3 +31,28 @@ btnMostrar.addEventListener("click", () => {
         alert(`Ya hiciste clic antes. Intentos: ${contadorDeClicks}`);
     }
 });
+
+// Botón para agregar habilidades
+const btnAgregar = document.getElementById("agregarHabilidadBtn");
+
+// Evento al hacer clic en el botón
+btnAgregar.addEventListener("click", () => {
+    const habilidadIngresada = prompt("¿Cuál es tu nueva habilidad?");
+
+    // Validamos la entrada del usuario
+    if (!habilidadIngresada) {
+        alert("Debes escribir una habilidad.");
+        return;
+    }
+
+    const habilidad = habilidadIngresada.trim();
+
+    if (habilidades.includes(habilidad)) {
+        alert("Esta habilidad ya existe en la lista.");
+        return;
+    }
+
+    // Agregar y refrescar la lista
+    habilidades.push(habilidad);
+    actualizarListaHabilidades();
+});
