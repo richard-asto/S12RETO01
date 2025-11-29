@@ -9,43 +9,45 @@
 </head>
 
 <body>
-    <header>
-        <h1>Bienvenido a Mi Landing Page</h1>
-        <p>
-            Una página interactiva para que aprendas desarrollo web con HTML, CSS
-            y JavaScript
-        </p>
-    </header>
+    <div class="container">
+        <header class="card">
+            <h1>Bienvenido a Mi Landing Page</h1>
+            <p>
+                Una página interactiva para que aprendas desarrollo web con HTML, CSS
+                y JavaScript
+            </p>
+        </header>
 
-    <section>
-        <h2>Sobre mí</h2>
-        <p>
-            Soy un entusiasta del desarrollo web y actualmente estoy aprendiendo
-            tecnologías como HTML, CSS y JavaScript.
-        </p>
-    </section>
+        <section>
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un entusiasta del desarrollo web y actualmente estoy aprendiendo
+                tecnologías como HTML, CSS y JavaScript.
+            </p>
+        </section>
 
-    <section>
-        <button id="mostrarMensajeBtn">Haz click para ver un mensaje</button>
-        <p id="mensaje">
-            ¡Felicidades, has hecho click en el botón!
-        </p>
-    </section>
+        <section>
+            <button id="mostrarMensajeBtn" class="btn">Haz click para ver un mensaje</button>
+            <p id="mensaje" class="mensaje">
+                ¡Felicidades, has hecho click en el botón!
+            </p>
+        </section>
 
-    <section>
-        <h3>Mis habilidades</h3>
-        <ul id="habilidadesLista"></ul>
-        <button id="agregarHabilidadBtn">Agregar habilidad</button>
-    </section>
+        <section>
+            <h3>Mis habilidades</h3>
+            <ul id="habilidadesLista"></ul>
+            <button id="agregarHabilidadBtn" class="btn">Agregar habilidad</button>
+        </section>
 
-    <section>
-        <h3>Elige el color de fondo</h3>
-        <input type="color" id="colorPicker" />
-    </section>
+        <section class="color-picker">
+            <h3>Elige el color de fondo</h3>
+            <input type="color" id="colorPicker" />
+        </section>
 
-    <footer>
-        <p>Gracias por visitar mi página</p>
-    </footer>
+        <footer class="footer">
+            <p>Gracias por visitar mi página</p>
+        </footer>
+    </div>
 
     <script src="./Js/script.js"></script>
 
