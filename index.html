@@ -4,12 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reto Semana 12</title>
+    <title>Landing Page Interactiva</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>⚡ Reto Semana 12 ⚡</h1>
+    <header>
+        <h1>Bienvenido a Mi Landing Page</h1>
+        <p>
+            Una página interactiva para que aprendas desarrollo web con HTML, CSS
+            y JavaScript
+        </p>
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+        <p>
+            Soy un entusiasta del desarrollo web y actualmente estoy aprendiendo
+            tecnologías como HTML, CSS y JavaScript.
+        </p>
+    </section>
+
+    <section>
+        <button id="mostrarMensajeBtn">Haz click para ver un mensaje</button>
+        <p id="mensaje">
+            ¡Felicidades, has hecho click en el botón!
+        </p>
+    </section>
+
+    <section>
+        <h3>Mis habilidades</h3>
+        <ul id="habilidadesLista"></ul>
+        <button id="agregarHabilidadBtn">Agregar habilidad</button>
+    </section>
+
+    <section>
+        <h3>Elige el color de fondo</h3>
+        <input type="color" id="colorPicker" />
+    </section>
+
+    <footer>
+        <p>Gracias por visitar mi página</p>
+    </footer>
 
     <script src="./Js/script.js"></script>
 
