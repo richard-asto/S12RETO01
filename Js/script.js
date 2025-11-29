@@ -16,3 +16,18 @@ function actualizarListaHabilidades() {
         lista.appendChild(item);
     });
 }
+
+// Referencias a elementos
+const btnMostrar = document.getElementById("mostrarMensajeBtn");
+const mensaje = document.getElementById("mensaje");
+
+// Evento de clic al botón
+btnMostrar.addEventListener("click", () => {
+    contadorDeClicks++;
+
+    if (contadorDeClicks === 1) {
+        mensaje.style.display = "block"; // Primera vez
+    } else {
+        alert(`Ya hiciste clic antes. Intentos: ${contadorDeClicks}`);
+    }
+});
