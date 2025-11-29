@@ -1,3 +1,4 @@
+/*----------------------------------------------------------------------*/
 let contadorDeClicks = 0;
 const habilidades = ["HTML", "CSS", "JavaScript"];
 
@@ -17,6 +18,7 @@ function actualizarListaHabilidades() {
     });
 }
 
+/*----------------------------------------------------------------------*/
 // Referencias a elementos
 const btnMostrar = document.getElementById("mostrarMensajeBtn");
 const mensaje = document.getElementById("mensaje");
@@ -32,6 +34,7 @@ btnMostrar.addEventListener("click", () => {
     }
 });
 
+/*----------------------------------------------------------------------*/
 // Botón para agregar habilidades
 const btnAgregar = document.getElementById("agregarHabilidadBtn");
 
@@ -56,3 +59,15 @@ btnAgregar.addEventListener("click", () => {
     habilidades.push(habilidad);
     actualizarListaHabilidades();
 });
+
+/*----------------------------------------------------------------------*/
+// Referencia al input de color
+const colorPicker = document.getElementById("colorPicker");
+
+// Cambia el fondo de la landin  page cuando el usuario cambia el color
+colorPicker.addEventListener("input", (event) => {
+    const color = event.target.value;   // Color seleccionado
+    document.body.style.backgroundColor = color;
+});
+
+/*----------------------------------------------------------------------*/
